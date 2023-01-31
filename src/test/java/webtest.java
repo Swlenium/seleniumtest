@@ -14,9 +14,10 @@ public class webtest {
         driver.get("https://www.demoblaze.com/index.html");
         driver.findElement(By.id("signin2")).click();
         driver.findElement(By.id("sign-username")).sendKeys("swanerbauf");
-        driver.findElement(By.id("sign-password")).sendKeys("swanerbaufe");
+        driver.findElement(By.id("sign-password")).sendKeys("swanerbauf");
         driver.findElement(By.cssSelector("button[onclick='register()']")).click();
         Thread.sleep(3000);
+
         Alert alert = driver.switchTo().alert();
         alert.accept();
 
@@ -29,7 +30,7 @@ public class webtest {
         driver.findElement(By.className("btn btn-success btn-lg")).click();
         driver.findElement(By.id("cartur")).click();
         driver.findElement(By.className("btn btn-success")).click();
-        driver.findElement(By.className("form-control")).sendKeys("swanerbaufest");
+        driver.findElement(By.className("form-control")).sendKeys("swanerbauf");
         driver.findElement(By.id("country")).sendKeys("peru");
         driver.findElement(By.id("city")).sendKeys("lima");
         driver.findElement(By.id("card")).sendKeys("12345678");
@@ -37,7 +38,6 @@ public class webtest {
         driver.findElement(By.id("year")).sendKeys("2023");
         driver.findElement(By.className("confirm btn btn-lg btn-primary")).click();
 
-        }
 
 
 
@@ -50,7 +50,7 @@ public class webtest {
 
 
 
-
+    }
 
 
 
