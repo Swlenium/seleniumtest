@@ -13,15 +13,18 @@ public class webtest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.demoblaze.com/index.html");
         driver.findElement(By.id("signin2")).click();
-        driver.findElement(By.id("sign-username")).sendKeys("swanerbaufest");
-        driver.findElement(By.id("sign-password")).sendKeys("swanerbaufest");
+        driver.findElement(By.id("sign-username")).sendKeys("swanerbauf");
+        driver.findElement(By.id("sign-password")).sendKeys("swanerbaufe");
         driver.findElement(By.cssSelector("button[onclick='register()']")).click();
         Thread.sleep(3000);
         Alert alert = driver.switchTo().alert();
         alert.accept();
+
+            driver.findElement(By.id("login2"));
+
         driver.findElement(By.id("login2"));
-        driver.findElement(By.id("loginusername")).sendKeys("swanerbaufest");
-        driver.findElement(By.id("loginpassword")).sendKeys("swanerbaufest");
+        driver.findElement(By.id("loginusername")).sendKeys("swanerbauf");
+        driver.findElement(By.id("loginpassword")).sendKeys("swanerbauf");
         driver.findElement(By.className("card-img-top img-fluid")).click();
         driver.findElement(By.className("btn btn-success btn-lg")).click();
         driver.findElement(By.id("cartur")).click();
@@ -34,6 +37,7 @@ public class webtest {
         driver.findElement(By.id("year")).sendKeys("2023");
         driver.findElement(By.className("confirm btn btn-lg btn-primary")).click();
 
+        }
 
 
 
@@ -46,7 +50,7 @@ public class webtest {
 
 
 
-    }
+
 
 
 
