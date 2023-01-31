@@ -44,16 +44,16 @@ public class webtest {
             driver.findElement(By.xpath("(//a[normalize-space()='Cart'])[1]")).click();
             driver.findElement(By.xpath("(//button[normalize-space()='Place Order'])[1]")).click();
 
-            driver.findElement(By.className("form-control")).sendKeys("swanerbauf");
+            driver.findElement(By.id("name")).sendKeys("swaner");
             driver.findElement(By.id("country")).sendKeys("peru");
             driver.findElement(By.id("city")).sendKeys("lima");
             driver.findElement(By.id("card")).sendKeys("12345678");
             driver.findElement(By.id("month")).sendKeys("enero");
             driver.findElement(By.id("year")).sendKeys("2023");
-            driver.findElement(By.className("confirm btn btn-lg btn-primary")).click();
+            driver.findElement(By.xpath("(//button[normalize-space()='Purchase'])[1]")).click();
 
         } else {
-            // hacer otra cosa aquí
+            driver.quit();
         }
 
 
